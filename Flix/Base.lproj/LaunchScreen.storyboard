@@ -14,7 +14,16 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="wll-Aa-kI8">
+                                <rect key="frame" x="118.5" y="264" width="138" height="139"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="wll-Aa-kI8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Lbk-a7-2oi"/>
+                            <constraint firstItem="wll-Aa-kI8" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="QZc-i0-B44"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -23,4 +32,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="launch_image" width="138" height="139"/>
+    </resources>
 </document>
