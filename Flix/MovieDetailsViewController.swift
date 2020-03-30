@@ -25,7 +25,7 @@ class MovieDetailsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        print(movie["title"])
+        //print(movie["title"] as Any)
         
         titleLabel.text = movie["title"] as? String
         titleLabel.sizeToFit()
@@ -39,7 +39,7 @@ class MovieDetailsViewController: UIViewController {
         let backdropPath = movie["backdrop_path"] as! String
         let backdropUrl = URL(string: "https://image.tmdb.org/t/p/w780" + backdropPath)
                   //print(posterUrl!)
-        backdropView.af.setImage(withURL: posterUrl!)
+        backdropView.af.setImage(withURL: backdropUrl!)
 
     }
     
